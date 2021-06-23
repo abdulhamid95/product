@@ -1,0 +1,388 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: ar-font;
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+
+body{
+    font-family: ar-font !important;
+    direction: rtl;
+}
+
+header video{
+    position: fixed;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+header .overlay {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+header .header-text {
+    padding: 112px 15px 0px;
+}
+
+header .header-text h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+    line-height: 46px;
+}
+
+header .header-text p{
+    font-size: 18px;
+    color: #5d5d5d;
+    line-height: 32px;
+    margin-bottom: 50px;
+}
+
+header .header-text a.btn {
+    background-color: #7233a2;
+    color: #ffffff;
+    margin-left: 15px;
+    font-family: ar-font !important;
+}
+
+header .header-text a[class*="btn"]:nth-child(even){
+    background-color: transparent;
+    color: #7936b2;
+    font-family: ar-font !important;
+    transition: all 0.5s ease;
+}
+
+header .header-text a[class*="btn"]:nth-child(even):hover{
+    background-color: #7233a2;
+    color: #ffffff;
+}
+
+header .overlay nav a img{
+    margin-right: 20px;
+}
+
+header .overlay .product {
+    position: relative;
+}
+
+header .overlay .product img.label {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+}
+
+header .overlay .product p {
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+}
+
+header .overlay .product p span {
+    display: block;
+}
+
+section.features{
+    padding: 25px 0;
+    background-color: #ffffff;
+    text-align: right;
+}
+
+section.features .features-text h3 {
+    font-size: 36px;
+    color: #555555;
+    line-height: 120px;
+    position: relative;
+}
+
+section.features .features-text h3::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    height: 2px;
+    background-color: #7233a2;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.features .media-feature .d-flex {
+    padding: 70px 0px;
+    border-bottom: 3px solid #eeeeee;
+}
+
+section.features .media-feature div[class*="d-flex"]:nth-child(even){
+    direction: ltr;
+    text-align: left;
+}
+
+section.features .media-feature .d-flex img{
+    margin: 0 5rem;
+}
+
+section.features .media-feature .d-flex h5{
+    font-size: 36px;
+    font-weight: bold;
+    color: #7233a2;
+    border-right: 2px solid #7233a2;
+    padding: 0px 20px;
+    margin-bottom: 50px;
+}
+
+section.features .media-feature div[class*="d-flex"]:nth-child(even) h5{
+    border-right: 0px;
+    border-left: 2px solid #7233a2;
+}
+
+section.features .media-feature .d-flex p{
+    font-size: 18px;
+    line-height: 32px;
+    color: #555555;
+}
+
+section.prices {
+    padding: 55px 0;
+    background-color: #f7f7f7;
+}
+
+section.prices .plan-card {
+    background-color: #ffffff;
+    color: #a9a9ab;
+    border: 2px solid #ededed;
+    padding-top: 15px;
+    margin-top: 100px;
+}
+
+section.prices .plan-card span.title {
+    color: #a044ff;
+    font-size: 18px;
+}
+
+section.prices .plan-card h5 {
+    font-size: 50px;
+    margin: 30px auto;
+}
+
+section.prices .plan-card h5 span {
+    font-size: 15px;
+    vertical-align: bottom;
+}
+
+section.prices .plan-card ul li {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+section.prices .plan-card a.btn {
+    border: 1px solid #7233a2;
+    background-color: #ffffff;
+    color: #7233a2;
+    font-family: ar-font;
+    border-radius: 0px;
+    padding: .5rem 1.75rem;
+    transition: .5s all ease;
+}
+
+section.prices .plan-card a.btn:hover {
+    background-color: #7233a2;
+    color: #ffffff;
+}
+
+section.prices .price-cards .large {
+    padding-top: 60px;
+    margin-top: 55px;
+}
+
+section.prices .price-cards .large .btn {
+    background-color: #7233a2;
+    color: #ffffff;
+}
+
+section.prices .price-cards .large .btn:hover {
+    border: 1px solid #7233a2;
+    background-color: #ffffff;
+    color: #7233a2;
+}
+
+
+section.faq {
+    padding: 55px 0;
+    background-color: #ffffff;
+    text-align: right;
+}
+
+section.faq .faq-text{
+    margin-bottom: 50px;
+}
+
+section.faq .faq-text h3 {
+    font-size: 30px;
+    color: #555555;
+}
+
+section.faq .accordion .accordion-item {
+    margin-bottom: 15px;
+    border: 1px solid #ebebeb;
+    border-radius: 0px;
+}
+
+section.faq .accordion .accordion-item .accordion-button {
+    font-size: 18px;
+    color: #555555;
+    font-weight: bold;
+}
+
+section.faq .accordion .accordion-item .accordion-button:focus, 
+section.faq .accordion .accordion-item .accordion-button:not(.collapsed) {
+    box-shadow: 0 0 0;
+    background-color: #fff !important;
+}
+
+section.faq .accordion .accordion-item .accordion-body p {
+    font-size: 15px;
+    color: #b3b3b3;
+    line-height: 24px;
+}
+
+section.video {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+section.video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+section.video .overlay {
+    background-color: rgba(106, 48, 147, 0.7);
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+section.video .overlay button {
+    outline: none;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    font-size: 30px;
+    font-family: ar-font;
+    color: #ffffff;
+    background-color: transparent;
+    border: 0px;
+    transform: translate(50%, -50%);
+}
+
+section.video .overlay button i {
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    line-height: 90px;
+}
+
+
+section.contact {
+    background-color: #131313;
+    padding: 60px 0 40px;
+    text-align: right;
+}
+
+section.contact h4 {
+    font-size: 18px;
+    line-height: 50px;
+    color: #758594;
+}
+
+section.contact form input.contact-form, 
+section.contact form textarea  {
+    display: block;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    background-color: #242424;
+    font-size: 18px;
+    line-height: 35px;
+    color: #aeadad;
+    font-family: ar-font;
+    border: none;
+    width: 90%;
+}
+
+section.contact form input[class*="contact-form"]:nth-child(even){
+    direction: rtl;
+}
+
+section.contact form button {
+    font-size: 18px;
+    color: #ffffff;
+    font-family: ar-font;
+    border: 0;
+    background-color: #7233a2;
+    padding: 7px 24px;
+}
+
+section.contact form button i {
+    margin-right: 10px;
+}
+
+section.contact .d-flex {
+    margin-bottom: 25px;
+}
+
+section.contact .d-flex h5 {
+    font-size: 18px;
+    color: #aeadad;
+    margin-bottom: 15px;
+}
+
+section.contact .d-flex p {
+    font-size: 15px;
+    line-height: 20px;
+    color: #737373;
+}
+
+footer {
+    background-color: #1d1d1d;
+    line-height: 80px;
+    text-align: right;
+}
+
+footer .list-inline .list-inline-item a.social {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: block;
+    color: #1d1d1d;
+    background-color: #718292;
+    border-radius: 50%;
+}
+
+footer .list-inline .list-inline-item a.social:hover {
+    background-color: #1479ec;
+}
+
+footer .copyright p {
+    font-size: 15px;
+    color: #919191;
+    text-align: left;
+}
