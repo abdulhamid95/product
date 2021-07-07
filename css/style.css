@@ -15,9 +15,9 @@ body{
 
 header video{
     position: fixed;
-    z-index: -1;
     min-width: 100%;
     min-height: 100%;
+    z-index: -1;
 }
 
 header .overlay {
@@ -66,6 +66,10 @@ header .overlay nav a img{
 
 header .overlay .product {
     position: relative;
+}
+
+header .overlay .product figure img {
+    width: 100%;
 }
 
 header .overlay .product img.label {
@@ -386,3 +390,31 @@ footer .copyright p {
     color: #919191;
     text-align: left;
 }
+
+@media (max-width: 768px){
+
+    header .overlay .product {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    header .overlay .product img.label{
+        right: 50%;
+        transform: translateX(50%)
+    }
+    header .overlay .product p {
+        right: 50%;
+        transform: translateX(50%)
+    }
+
+    section.features .media-feature .d-flex {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    section.features .media-feature .d-flex img{
+        margin: 0;
+    }
+}
+
