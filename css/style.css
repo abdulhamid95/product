@@ -308,7 +308,6 @@ section.video .overlay button i {
 section.contact {
     background-color: #131313;
     padding: 60px 0 40px;
-    text-align: right;
 }
 
 section.contact h4 {
@@ -329,6 +328,12 @@ section.contact form textarea  {
     font-family: ar-font;
     border: none;
     width: 90%;
+    text-align: right;
+}
+
+section.contact form textarea:focus {
+    background-color: #242424;
+    color: #aeadad;
 }
 
 section.contact form input[class*="contact-form"]:nth-child(even){
@@ -415,6 +420,10 @@ footer .copyright p {
 
     section.features .media-feature .d-flex img{
         margin: 0;
+    }
+
+    footer {
+        text-align: center;
     }
 }
 

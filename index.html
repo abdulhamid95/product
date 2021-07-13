@@ -183,7 +183,7 @@
                                     كم تبلغ قيمة رسوم عرض السلع؟                                           
                                 </button>
                               </h2>
-                              <div id="collapseOne-1" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample-1">
+                              <div id="collapseOne-1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample-1">
                                 <div class="accordion-body">
                                   <p>
                                     هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
@@ -229,7 +229,7 @@
                                     كم تبلغ قيمة رسوم عرض السلع؟                                           
                                 </button>
                               </h2>
-                              <div id="collapseOne-2" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample-2">
+                              <div id="collapseOne-2" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample-2">
                                 <div class="accordion-body">
                                   <p>
                                     هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
@@ -275,7 +275,7 @@
                                     كم تبلغ قيمة رسوم عرض السلع؟                                           
                                 </button>
                               </h2>
-                              <div id="collapseOne-3" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample-3">
+                              <div id="collapseOne-3" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample-3">
                                 <div class="accordion-body">
                                   <p>
                                     هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
@@ -335,10 +335,19 @@
                         <h4>
                             تواصل معنا
                         </h4>
-                        <form action="/">
-                            <input type="text" name="name" id="name" placeholder="الاسم" class="contact-form">
-                            <input type="email" placeholder="البريد الالكتروني" class="contact-form">
-                            <textarea name="comment" id="comment" placeholder="الرسالة"></textarea>
+                        <form class="needs-validation" novalidate>
+                            <input type="text" name="name" id="name" placeholder="الاسم" class="form-control contact-form" id="validationCustomemail" aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                                عذرًا يرجى إدخل الاسم
+                              </div>
+                            <input type="email" placeholder="البريد الالكتروني" class="form-control contact-form" id="validationCustomemail" aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                                عذرًا يرجى إدخل البريد الإلكتروني
+                              </div>
+                            <textarea name="comment" id="comment" class="form-control" placeholder="الرسالة" id="validationCustomemail" aria-describedby="inputGroupPrepend" required></textarea>
+                            <div class="invalid-feedback">
+                                عذرًا يرجى كتابة رسالة
+                              </div>
                             <button type="submit">ارسال<i class="fas fa-angle-double-left"></i></button>
 
                         </form>
