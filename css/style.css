@@ -24,6 +24,14 @@ header .overlay {
     background-color: rgba(255, 255, 255, 0.7);
 }
 
+header .overlay .page-brand {
+    padding: 15px;
+}
+
+header .overlay .page-brand a{
+    margin-right: 20px;
+}
+
 header .header-text {
     padding: 112px 15px 0px;
 }
@@ -58,10 +66,6 @@ header .header-text a[class*="btn"]:nth-child(even){
 header .header-text a[class*="btn"]:nth-child(even):hover{
     background-color: #7233a2;
     color: #ffffff;
-}
-
-header .overlay nav a img{
-    margin-right: 20px;
 }
 
 header .overlay .product {
