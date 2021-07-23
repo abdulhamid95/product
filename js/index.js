@@ -1,5 +1,7 @@
+//تعريف متغير للفيديو
 var vid = document.getElementById("video");
 
+// دالة لتشغيل وإيقاف الفيديو
 function playVid() {
     if(vid.paused){
         vid.play();
@@ -8,23 +10,22 @@ function playVid() {
     }
 }
 
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+// دالة للتحقق من دخل المستخدم
 (function () {
-    'use strict'
-  
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.querySelectorAll('.needs-validation')
-  
-    // Loop over them and prevent submission
-    Array.prototype.slice.call(forms)
-      .forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-          if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
-  
-          form.classList.add('was-validated')
-        }, false)
-      })
-  })()
+
+  // إحضار جميع النماذج التي نريد تطبيق التحقق منها
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // الاستماع إلى أمر الإرسال والتأكد من الدخل وإضافة صنف التحقق في حال كان صحيحًا
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()

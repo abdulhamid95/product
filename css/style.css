@@ -13,6 +13,9 @@ body{
     direction: rtl;
 }
 
+
+/***************** Header *****************/
+
 header video{
     position: fixed;
     min-width: 100%;
@@ -95,6 +98,9 @@ header .overlay .product p span {
     display: block;
 }
 
+
+/***************** FEATURES *****************/
+
 section.features{
     padding: 25px 0;
     background-color: #ffffff;
@@ -152,6 +158,9 @@ section.features .media-feature .d-flex p{
     line-height: 32px;
     color: #555555;
 }
+
+
+/***************** PRICE *****************/
 
 section.prices {
     padding: 55px 0;
@@ -220,6 +229,8 @@ section.prices .price-cards .large .btn:hover {
 }
 
 
+/***************** FAQ *****************/
+
 section.faq {
     padding: 55px 0;
     background-color: #ffffff;
@@ -258,6 +269,10 @@ section.faq .accordion .accordion-item .accordion-body p {
     color: #b3b3b3;
     line-height: 24px;
 }
+
+
+
+/***************** VIDEO *****************/
 
 section.video {
     min-height: 100vh;
@@ -308,6 +323,8 @@ section.video .overlay button i {
     line-height: 90px;
 }
 
+
+/***************** CONTACT *****************/
 
 section.contact {
     background-color: #131313;
@@ -372,6 +389,10 @@ section.contact .d-flex p {
     line-height: 20px;
     color: #737373;
 }
+
+
+
+/***************** FOOTER *****************/
 
 footer {
     background-color: #1d1d1d;
